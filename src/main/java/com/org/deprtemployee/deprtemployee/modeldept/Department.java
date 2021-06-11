@@ -1,9 +1,11 @@
 package com.org.deprtemployee.deprtemployee.modeldept;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Department {
+    @Id
     private int deptid;
     private double deptsalary;
     private String deptname;
